@@ -1,0 +1,13 @@
+.about-description{
+    font-family: Arial;
+    font-weight:bold;
+}
+.About-left{
+    font-weight: bold;
+    color: black;
+}
+.active {
+    font-weight:bold;
+    color: black;
+    font-size: x-large;
+}

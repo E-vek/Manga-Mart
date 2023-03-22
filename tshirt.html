@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tshirt</title>
+    <link rel="stylesheet" href="style/nav.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html">
+            <img src="assets/logo.jpg" alt="manga_mart" style="height: 100px;  width: 100px;">
+        </a>
+        <div class="header-right">
+            <a href="#contact">Contact</a>
+            <a href="about.html">About Us</a>
+            <a class="active" href="#">login</a>
+        </div>
+        <div class="ham" onclick="myFunction()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="40px"
+                height="40px">
+                <path
+                    d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z" />
+            </svg>
+        </div>
+    </div>
+    <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="index.html">My Cart</a>
+        <a href="index.html">Profile</a>
+        <a href="#contact">Contact</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="main">
+        <img class="product-photo" src="assets/luffy.jpg" alt="">
+          <div class="info">
+            <div class="name">Luffy Gear5 printed t-shirt black</div>
+            <div class="price">Rs 500/-</div>
+          </div>
+    </div>
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "flex";
+        }
+    }
+</script>
+
+</html>
