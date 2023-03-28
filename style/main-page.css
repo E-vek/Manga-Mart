@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   font-weight: 400;
   margin: 0;
+}
+
+* {
+  box-sizing: unset;
+}
+
+.Zindex {
+  z-index: 2;
 }
 
 .header {
@@ -16,15 +26,16 @@ body {
 }
 
 /* Style the header links */
-.header-new{
+.header-new {
   color: black;
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 25px;
-  margin-right: 10px;
+  margin: 0px 15px;
 }
+
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
   font-size: 25px;
@@ -38,7 +49,7 @@ body {
 }
 
 /* Style the active/current link*/
-.profilelogo{
+.profilelogo {
   width: 37px;
   height: 37px;
   display: flex;
@@ -51,11 +62,13 @@ body {
   position: relative;
   display: flex;
 }
-.header-right-logo{
+
+.header-right-logo {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
+
 .header-mid a {
   position: relative;
 }
@@ -92,12 +105,13 @@ body {
   width: 100%;
 }
 
-.main {
+.main-container {
   /* background-color: #c58af9; */
   background-color: rgb(152, 150, 240);
+  transition: 800ms;
 }
 
-.card {
+.section-card-container {
   /* background-color: #f1f1f1; */
   width: 100%;
   height: 450px;
@@ -111,9 +125,12 @@ body {
 
 .product-photo {
   width: 400px;
+  /* -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
-.info {
+.description-container {
   margin-top: 20px;
   font-size: 20px;
   display: flex;
@@ -124,7 +141,7 @@ body {
 }
 
 .name {
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .price {
@@ -140,6 +157,7 @@ body {
 .grey div {
   color: black;
 }
+
 .grey2 {
   background-color: #525C62;
   transition: 600ms;
@@ -148,31 +166,59 @@ body {
 .grey2 div {
   color: white;
 }
+
 .white {
-  background-color:#EFEFEF;
-  transition:600ms;
+  background-color: #EFEFEF;
+  transition: 600ms;
 }
 
 .white div {
   color: black;
 }
 
-.card:hover{
+.section-card-container:hover {
   background-color: rgb(90, 89, 143);
+  transition: 700ms;
 }
-.grey:hover{
+
+.grey:hover {
   background-color: #9d9d9b;
 }
-.grey2:hover{
+
+.grey2:hover {
   background-color: #495055;
 }
-.white:hover{
+
+.white:hover {
   background-color: #c4c0c0;
   transition: 600ms #c4c0c0;
 }
+
 .ham {
   display: none;
   margin-right: 20px;
+}
+
+.bannercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.manga-background {
+  background-image: url("/assets/slide3-background.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  filter: brightness(50%);
+}
+
+.txt {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 20px;
+  color: white;
+
 }
 
 #myLinks {
@@ -228,6 +274,7 @@ body {
   font-size: 50px;
   color: white;
   font-weight: 400;
+  border-top: white solid 2px;
 }
 
 .header-1 p {
@@ -271,11 +318,34 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
 }
 
+.footer-mid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 400px;
+}
 
+.footer-right {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 20px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.footer-right p{
+  margin-bottom: 30px;
+}
 .copywrite {
   color: white;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width:900px) {

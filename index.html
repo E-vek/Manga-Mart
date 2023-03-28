@@ -5,11 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>shope anime clothing manga mart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style/main-page.css">
-  <style>
 
-
-  </style>
 </head>
 
 
@@ -54,46 +53,89 @@
       <a href="#news">My Cart</a>
     </div>
   </div>
-  <div class="bannercontainer">
-    <div class="banner">
-      <div class="bannertxt">Shop now at Manga Mart!</div>
-      <div class="bannertxt-sm">World wide shipping</div>
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     </div>
-    <img src="assets/background2.jpg" style="width:100%;">
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="bannercontainer d-block">
+          <div class="banner">
+            <div class="bannertxt">Shop now at Manga Mart!</div>
+            <div class="bannertxt-sm">World wide shipping</div>
+          </div>
+          <img src="assets/background2.jpg" style="width:100%;">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="bannercontainer d-block">
+          <div class="banner">
+            <div class="bannertxt"> Anime Clothing Collection !</div>
+            <div class="bannertxt-sm">Starting From 399/- Only</div>
+          </div>
+          <img src="assets/slide2 banner.jpg" style="width:100%;">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="banner">
+          <img src="assets/slide3 prduct-photo.jpg" alt="">
+          <div class="txt">
+            Custom Print Your Own Anime design
+          </div>
+        </div>
+        <div class="bannercontainer manga-background">
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev Zindex" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next Zindex" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
 
-  <div class="main">
-    <div class="card">
+  <div class="main-container">
+    <div class="section-card-container">
       <a href="tshirt.html" style="text-decoration: none; color: black;">
         <img class="product-photo" src="assets/rengoku-back.webp">
       </a>
-      <div class="info">
-        <div class="name">Oversized T-shirts At</div>
-        <div class="price">Rs 399/-</div>
+      <div class="description-container">
+        <div class="name">Oversized T-shirts </div>
+        <div class="price">Starting From Rs 399/-</div>
       </div>
     </div>
-    <div class="card grey">
-      <div class="info">
-        <div class="name">T-shirts At</div>
-        <div class="price">Rs 399/-</div>
+    <div class="section-card-container grey">
+      <div class="description-container">
+        <div class="name">T-shirts </div>
+        <div class="price">Starting From Rs 399/-</div>
       </div>
       <a href="tshirt.html" style="text-decoration: none;">
         <img class="product-photo" src="assets/team7.jpg">
       </a>
     </div>
-    <div class="card grey2">
+    <div class="section-card-container grey2">
       <a href="tshirt.html" style="text-decoration: none;">
         <img class="product-photo" src="assets/goku.webp">
       </a>
-      <div class="info">
-        <div class="name">Sweat-Shirt At</div>
-        <div class="price">Rs 399/-</div>
+      <div class="description-container">
+        <div class="name">Sweat-Shirts </div>
+        <div class="price">Starting From Rs 599/-</div>
       </div>
     </div>
-    <div class="card white">
-      <div class="info">
-        <div class="name">Premium Hoodie At</div>
-        <div class="price">Rs 699/-</div>
+    <div class="section-card-container white">
+      <div class="description-container">
+        <div class="name">Premium Hoodies</div>
+        <div class="price">Starting From Rs 699/-</div>
       </div>
       <a href="tshirt.html" style="text-decoration: none;">
         <img class="product-photo" src="assets/eren yeager.jpg">
@@ -121,7 +163,7 @@
       </div>
       </a>
       <div class="link-logo">
-        <a href="mailto:vivekkajale302@gmail.com">
+        <a href="mailto:gethelp.mangamart@gmail.com">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
             <path
               d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z" />
@@ -138,11 +180,19 @@
       </div>
     </div>
     <div class="footer-main">
-      <div class="footer-img">
-        <img src="assets/MM manga mart.png" alt="manga_mart" style="height: 90px;  width: 150px;">
-      </div>
-      <div class="copywrite">
+      <div class="footer-mid">
+        <img src="assets/MM logo.png" alt="manga_mart" style="height: 60px;  width: 150px; margin-bottom: 20px;">
         <p>Copyright © 2022 - All right reserved by E-vek on Github Pages.</p>
+        <p>100% secure payments | free return & exchange</p>
+      </div>
+      <!-- <div class="copywrite"> -->
+      <!-- </div> -->
+      <div class="footer-right">
+        <P>Help & Support</P>
+        <P>Privacy Policy</P>
+        <P>Contact Us</P>
+        <P>About Us</P>
+        <P></P>
       </div>
     </div>
   </div>
