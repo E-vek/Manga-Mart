@@ -283,12 +283,7 @@ body {
   padding: 5px;
 }
 
-.footer {
-  background-color: #14213d;
-  display: flex;
-  height: 300px;
-  position: relative;
-}
+
 
 .links {
   height: 100%;
@@ -311,7 +306,12 @@ body {
 .link-logo:hover a svg {
   fill: black;
 }
-
+.footer {
+  background-color: #14213d;
+  display: flex;
+  height: 300px;
+  position: relative;
+}
 .footer-main {
   display: flex;
   width: 100%;
@@ -327,10 +327,10 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 400px;
+
 }
 
 .footer-right {
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -339,14 +339,12 @@ body {
   margin-top: 20px;
 }
 
-.footer-right p{
+.footer-right a{
   margin-bottom: 30px;
-}
-.copywrite {
+  text-decoration: none;
   color: white;
-  margin-top: 20px;
-  margin-left: 20px;
 }
+
 
 @media only screen and (max-width:900px) {
   .row {
