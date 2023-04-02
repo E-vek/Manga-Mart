@@ -1,0 +1,142 @@
+.product-photo {
+  width: 500px;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  border: solid #6a6a6a 2px;
+}
+
+.info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 60px;
+  border-radius: 18px;
+  padding-left: 10px;
+  border: solid #6a6a6a 2px;
+  width: 560px;
+  color: whitesmoke;
+}
+
+.price {
+  margin-bottom: 50px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.rating {
+  background-color: greenyellow;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.other {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.review {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.sizechart {
+  margin-top: 0px;
+  font-size: 30px;
+  border-radius: 20px;
+  padding-left: 10px;
+  width: 562px;
+  background-color: black;
+  border: solid #6a6a6a 2px;
+  color: whitesmoke;
+}
+
+.size {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 25px;
+  width: 50px;
+  border: solid #6a6a6a 2px;
+}
+
+.size-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.discription {
+  margin-left: 70px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+
+}
+
+.row button {
+  margin-left: 50px;
+}
+
+button {
+  all: unset;
+  padding: 30px;
+  font-size: 25px;
+  background-color: #4085b6;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #1f6291;
+}
+
+.product-detail {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 60px;
+  border-radius: 18px;
+  padding-left: 10px;
+  border: solid #6a6a6a 2px;
+  width: 560px;
+  color: whitesmoke;
+}
+
+.product-detail p {
+  margin: 0;
+  line-height: 50px;
+}
+
+.product-detail h1 {
+  font-size: 30px;
+  margin: 0;
+}

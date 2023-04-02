@@ -6,6 +6,27 @@ body {
   margin: 0;
 }
 
+.loader-container{
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  top: 0;
+  transition: opacity 300ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loader-container img{
+  width: 150px;
+  height: auto;
+  border-radius: 10%;
+}
+.loader-container p{
+  margin-top: 10px;
+}
 * {
   box-sizing: unset;
 }
@@ -14,89 +35,7 @@ body {
   z-index: 2;
 }
 
-.header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-}
 
-/* Style the header links */
-.header-new {
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 25px;
-  line-height: 25px;
-  margin: 0px 15px;
-}
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  /* border-bottom: #030303 solid 1px; */
-  color: black;
-}
-
-/* Style the active/current link*/
-.profilelogo {
-  width: 37px;
-  height: 37px;
-  display: flex;
-  margin-right: 10px;
-}
-
-/* Float the link section to the right */
-.header-mid {
-  /* float: right; */
-  position: relative;
-  display: flex;
-}
-
-.header-right-logo {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-.header-mid a {
-  position: relative;
-}
-
-.header-mid a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 3px;
-  background: rgb(0, 128, 255);
-  border-radius: 5px;
-  transform: scaleX(0);
-  transition: transform 700ms;
-}
-
-.header-mid a:hover::after {
-  transform: scaleX(1);
-}
-
-.header-1 {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  line-height: 22px;
-
-}
 
 .row {
   display: flex;
@@ -194,10 +133,7 @@ body {
   transition: 600ms #c4c0c0;
 }
 
-.ham {
-  display: none;
-  margin-right: 20px;
-}
+
 
 .bannercontainer {
   display: flex;
@@ -218,7 +154,6 @@ body {
   font-weight: 800;
   padding: 20px;
   color: white;
-
 }
 
 #myLinks {
@@ -265,7 +200,7 @@ body {
 }
 
 .bannertxt {
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 800;
   color: white;
 }
@@ -277,14 +212,6 @@ body {
   border-top: white solid 2px;
 }
 
-.header-1 p {
-  background-color: rgb(237, 156, 5);
-  color: white;
-  padding: 5px;
-}
-
-
-
 .links {
   height: 100%;
   align-items: center;
@@ -294,6 +221,7 @@ body {
   margin-left: 5px;
   position: absolute;
   left: 0;
+  z-index: 2;
 }
 
 .link-logo a svg {
@@ -306,28 +234,28 @@ body {
 .link-logo:hover a svg {
   fill: black;
 }
+
 .footer {
   background-color: #14213d;
   display: flex;
   height: 300px;
   position: relative;
 }
-.footer-main {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  color: white;
-}
+
 
 .footer-mid {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 400px;
-  
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  height: 100%;
+}
+
+.footer-mid p {
+  margin-top: 10px;
 }
 
 .footer-right {
@@ -335,16 +263,22 @@ body {
   flex-direction: column;
   align-items: flex-end;
   font-size: 20px;
-  padding: 30px;
-  margin-top: 20px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  justify-content: space-around;
+  margin-right: 20px;
 }
 
-.footer-right a{
-  margin-bottom: 30px;
+.footer-right a {
+  /* margin-bottom: 30px; */
   text-decoration: none;
   color: white;
 }
 
+.payment_icons {
+  margin-top: 10px;
+}
 
 @media only screen and (max-width:900px) {
   .row {

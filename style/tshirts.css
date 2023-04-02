@@ -1,0 +1,25 @@
+p{
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin:50px 0px;
+}
+.card img{
+    width: 300px;
+}
+
+.info{
+    display: flex;
+    flex-direction:column ;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+}
