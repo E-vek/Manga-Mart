@@ -46,12 +46,11 @@ body {
 
 .main-container {
   /* background-color: #c58af9; */
-  background-color: rgb(152, 150, 240);
   transition: 800ms;
 }
 
 .section-card-container {
-  /* background-color: #f1f1f1; */
+  background-color: #6F70AB;
   width: 100%;
   height: 450px;
   display: flex;
@@ -133,8 +132,28 @@ body {
   transition: 600ms #c4c0c0;
 }
 
+.highlight-strip{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+  padding: 30px;
+  background-color: white;
+  height: 100px;
+}
+.highlight-strip p{
+  margin: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+}
 
+.highlight-strip img{
+  width: 100px;
+  height: auto;
+}
 .bannercontainer {
   display: flex;
   align-items: center;

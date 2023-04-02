@@ -1,5 +1,8 @@
-p{
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.info p {
     margin: 0;
+    color: black;
 }
 
 .row{
@@ -17,9 +20,13 @@ p{
     font-size: 25px;
     cursor: pointer;
     margin-top: 20px;
-    
 }
 
 a{
     text-decoration: none;
+}
+
+p span{
+    text-decoration: line-through;
+    margin: 10px;
 }

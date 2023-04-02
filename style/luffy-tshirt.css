@@ -27,6 +27,11 @@
   margin-bottom: 0;
   margin-top: 0;
 }
+ 
+.price span{
+    text-decoration: line-through;
+    margin: 10px;
+}
 
 .rating {
   background-color: greenyellow;
@@ -140,3 +145,4 @@ button:hover {
   font-size: 30px;
   margin: 0;
 }
+ 
