@@ -50,7 +50,7 @@ body {
 /* Float the link section to the right */
 .header-mid {
   /* float: right; */
-  position: relative;
+  /* position: relative; */
   display: flex;
 }
 
@@ -80,6 +80,31 @@ body {
 .header-mid a:hover::after {
   transform: scaleX(1);
 }
+
+.sub-title {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: #EFEFEF;
+  width: 500px;
+  justify-content: center;
+  padding: 20px;
+  left: 30%;
+  z-index: 5;
+  top: 150px;
+}
+
+.sub-title a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  display: block;
+  margin: 20px 0px;
+}
+.sub-title-container:hover .sub-title{
+  display: flex;
+}
+
 
 .header-1 {
   text-align: center;
@@ -131,7 +156,6 @@ body {
   .header-mid {
     display: none;
     float: none;
-
   }
 
   .ham {
@@ -142,6 +166,15 @@ body {
     float: none;
     display: block;
     text-align: left;
+    margin: 0;
+
   }
 
+  .header-right-logo {
+    display: none;
+  }
+
+  .header-new img {
+    width: 100px;
+  }
 }

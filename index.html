@@ -26,13 +26,38 @@
 
     <div class="header">
       <a class="header-new" href="index.html">
-        <img src="assets/MM manga mart black.png" alt="manga_mart" style="height: 70px;  width: 130px;">
+        <img src="assets/MM manga mart black.png" alt="manga_mart" style="height: 70px; width: 130px;">
       </a>
       <div class="header-mid">
-        <a class="header-new" href="#">Anime</a>
-        <a class="header-new" href="#">Apparels</a>
-        <a class="header-new" href="#">Categories</a>
+        <div class="sub-title-container">
+          <div id="anime" class="header-new anime" href="#">Anime</div>
+          <div class="sub-title">
+            <a href="#">Naruto</a>
+            <a href="#">One piece</a>
+            <a href="#">Drogon Ball Z</a>
+            <a href="#">Demon Slayer</a>
+            <a href="#">Attack On Titan</a>
+          </div>
+        </div>
+        <div class="sub-title-container">
+          <div class="header-new" href="#">Apparels</div>
+          <div class="sub-title">
+            <a href="#">Hoodies</a>
+            <a href="#">T-Shirts</a>
+            <a href="#">Sweat-Shirts</a>
+            <a href="#">Oversized-Tshirts</a>
+          </div>
+        </div>
+        <div class="sub-title-container">
+          <div class="header-new" href="#">Categories</div>
+          <div class="sub-title">
+            <a href="#">Unisex cloth</a>
+            <a href="#">Anime Sticker</a>
+            <a href="#">Mobile Accessories</a>
+          </div>
+        </div>
       </div>
+
       <div class="header-right-logo">
         <a class="profilelogo" href="#">
           <img class="profilelogo" src="assets/icons8-search.svg">
@@ -51,6 +76,7 @@
         </svg>
       </div>
     </div>
+
     <div id="myLinks">
       <a href="#news">Home</a>
       <a href="#news">Profile</a>
@@ -59,6 +85,8 @@
       <a href="#news">My Cart</a>
     </div>
   </div>
+
+
   <!-- Carousel -->
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -77,7 +105,7 @@
             <div class="bannertxt">Shop now at Manga Mart!</div>
             <div class="bannertxt-sm">World wide shipping</div>
           </div>
-          <img src="assets/background2.jpg" style="width:100%;">
+          <img src="assets/background2.jpg">
         </div>
       </div>
       <div class="carousel-item">
@@ -86,7 +114,7 @@
             <div class="bannertxt"> Anime Clothing Collection !</div>
             <div class="bannertxt-sm">Starting From 399/- Only</div>
           </div>
-          <img src="assets/slide2 banner.jpg" style="width:100%;">
+          <img src="assets/slide2 banner.jpg">
         </div>
       </div>
       <div class="carousel-item">
@@ -132,16 +160,20 @@
     <div class="highlight-strip">
       <p>
         <img src="assets/7day return.png" alt="">
-        7 Days <br>Easy Returns</p>
+        7 Days <br>Easy Returns
+      </p>
       <p>
         <img src="assets/cod icon.webp" alt="">
-        Cash On <br>Delivery</p>
+        Cash On <br>Delivery
+      </p>
       <p>
         <img src="assets/made in india.jpg" alt="">
-        MADE IN INDIA</p>
+        MADE IN INDIA
+      </p>
       <p>
         <img src="assets/best quality.jpg" alt="">
-        100% Premium <br>Product Quality</p>
+        100% Premium <br>Product Quality
+      </p>
     </div>
     <div class="section-card-container grey2">
       <a href="sweat-shirt.html" style="text-decoration: none;">
@@ -221,7 +253,7 @@
     } else {
       x.style.display = "flex";
     }
-  } 
+  }
 
   const loader = document.querySelector(".loader-container")
   window.addEventListener("load", function () {
